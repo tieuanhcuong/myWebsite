@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 1 học thêm</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> -->
+</head>
+
+<body onload="loadTheme">
+    <header>
+        <img src="logo.png" alt="">
+        <p>Hotline: 0987654321</p>
+        <div class="color">
+            <div id="c1"></div>
+            <div id="c2"></div>
+            <div id="c3"></div>
+        </div>
+    </header>
+    <div class="toggle">
+        <i class="bi bi-list"></i>
+    </div>
+    <nav>
+        <a href="">Trang chủ</a>
+        <a href="">Giới thiệu</a>
+        <a href="">Tin tức</a>
+        <a href="">Tour trong nước</a>
+        <a href="">Tour quốc tế</a>
+        <a href="">Khuyễn mãi</a>
+        <a href="">Liên hệ</a>
+    </nav>
+    <div class="slide">
+        <img id="image" src="anh1.jpg" alt="">
+        <i class="bi bi-arrow-left-square-fill" onclick="prev()"></i>
+        <i class="bi bi-arrow-right-square-fill" onclick="next()"></i>
+        <div class="list">
+            <span id="0">.</span>
+            <span id="1">.</span>
+            <span id="2">.</span>
+        </div>
+    </div>
+
+    <main>
+        <h2>Danh sách tour du lịch</h2>
+        <section class="list-tour">
+            <article>
+                <img src="anh1.jpg" alt="" width="100%">
+                <p><b>Du Lịch</b></p>
+                <p>Giá: 1.000.000đ</p>
+                <p class="tour-color">Đặt tour</p>
+            </article>
+            <article>
+                <img src="anh1.jpg" alt="" width="100%">
+                <p><b>Du Lịch</b></p>
+                <p>Giá: 1.000.000đ</p>
+                <p class="tour-color">Đặt tour</p>
+            </article>
+            <article>
+                <img src="anh1.jpg" alt="" width="100%">
+                <p><b>Du Lịch</b></p>
+                <p>Giá: 1.000.000đ</p>
+                <p class="tour-color">Đặt tour</p>
+            </article>
+            <article>
+                <img src="anh1.jpg" alt="" width="100%">
+                <p><b>Du Lịch</b></p>
+                <p>Giá: 1.000.000đ</p>
+                <p class="tour-color">Đặt tour</p>
+            </article>
+        </section>
+        <section class="list-tour">
+            <article>
+                <img src="anh1.jpg" alt="" width="100%">
+                <p><b>Du Lịch</b></p>
+                <p>Giá: 1.000.000đ</p>
+                <p class="tour-color">Đặt tour</p>
+            </article>
+            <article>
+                <img src="anh1.jpg" alt="" width="100%">
+                <p><b>Du Lịch</b></p>
+                <p>Giá: 1.000.000đ</p>
+                <p class="tour-color">Đặt tour</p>
+            </article>
+            <article>
+                <img src="anh1.jpg" alt="" width="100%">
+                <p><b>Du Lịch</b></p>
+                <p>Giá: 1.000.000đ</p>
+                <p class="tour-color">Đặt tour</p>
+            </article>
+            <article>
+                <img src="anh1.jpg" alt="" width="100%">
+                <p><b>Du Lịch</b></p>
+                <p>Giá: 1.000.000đ</p>
+                <p class="tour-color">Đặt tour</p>
+            </article>
+            </section>
+            <h2>Phản hồi của khách hàng</h2>
+            <section class="feedback">
+                <article>
+                    <img class="image1" src="kh1.jpg" alt="">
+                    <div class="middle">
+                        <div class="text">abc</div>
+                    </div>
+                    <p>Khách hàng 1</p>
+                    <p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </p>
+                    <span>
+                        <i>
+                            "Tôi và gia đình đã có chuyến đi thật thoải mái."
+                        </i>
+                    </span>
+                </article>
+                <article>
+                    <img class="image2" src="kh2.jpg" alt="">
+                    <div class="middle">
+                        <div class="text">21464</div>
+                    </div>
+                    <p>Khách hàng 2</p>
+                    <p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </p>
+                    <span>
+                        <i>
+                            "Chuyến đi thật very very good."
+                        </i>
+                    </span>
+                </article>
+                <article>
+                    <img class="image3" src="kh3.jpg" alt="">
+                    <div class="middle">
+                        <div class="text">jhlkjkj</div>
+                    </div>
+                    <p>Khách hàng 3</p>
+                    <p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </p>
+                    <span>
+                        <i>
+                            "Chuyến đi thật sự rất tuyệt. Đỉnh!! 10 điểm."
+                        </i>
+                    </span>
+                </article>
+            </section>
+            <h2>Du lịch quốc tế</h2>
+            <section class="grid-container">
+                <div class="item1">
+                    <img src="dl1.jpg" alt="" height="230px">
+                    <p>Du lịch Sin ga po</p>
+                </div>
+                <div class="item2">
+                    <img src="dl2.jpg" alt="" height="230px">
+                    <p>Du lịch Phi líp pin</p>
+                </div>
+                <div class="item3">
+                    <img src="dl3.jpg" alt="" height="230px">
+                    <p>Du lịch Ả rập xê út</p>
+                </div>
+                <div class="item4">
+                    <img src="dl4.jpg" alt="" height="230px">
+                    <p>Du lịch In đô nê xi a</p>
+                </div>
+                <div class="item5">
+                    <img src="dl5.jpg" alt="" height="230px">
+                    <p>Du lịch Thái len</p>
+                </div>
+            </section>
+    </main>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31348.109165110032!2d106.6190853059831!3d10.848482637728404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529b6a2b351a5%3A0x11690ada8c36f9bc!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIFRo4buxYyBow6BuaCBGUFQgUG9seXRlY2huaWMgVFAuSENNIChDUzMp!5e0!3m2!1svi!2s!4v1684982484635!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <footer>
+        <section>
+            <div class="footer1">
+                <h2>Liên hệ</h2>
+                <hr/>
+                <p>Phường Trung Mỹ Tây,Quận 12,TP.Hồ Chí Minh</p>
+                <p>Email:tieuanhcuong2004@gmail.com</p>
+                <p>Điện thoại:0909187402</p>
+                <p>Mã số thuế:0311854004</p>
+                <p>GPKD lữ hành quốc tế số 79-400/2015/TCDL</p>
+            </div>
+            <div class="footer2">
+                <h2>BẢN ĐỒ</h2>
+                <hr/> 
+                <i style="color: white;" class="bi bi-facebook"></i>
+                <i style="color: white;" class="bi bi-youtube"></i>
+                <i style="color: white;" class="bi bi-instagram"></i>
+                <p>Đăng ký nhận tin khuyến mãi</p>
+                <input type="text" placeholder="Nhập Email nhận khuyến mãi " width="100%">
+                <button style="color: rgb(107, 107, 107);">Đăng ký</button>
+            </div>
+            <div class="footer-logo">
+                <img src="logo.png" alt="">
+                <p>PYS Travel nỗ lực từng ngày để đem đến những sản phẩm du lịch mới mẻ và chất lượng dịch vụ hoàn hảo tới khách hàng.</p>
+                <img class="zalo" src="zalo.png" alt="">
+                <img class="messenger" src="messenger.png" alt="">
+            </div>
+        </section>
+        <div class="footer-bot">
+            <span style="color: white;">Copyright © 2011-2018. All Rights Reserved by PYS Travel</span>
+        </div>
+    </footer>
+    
+    <script>
+        $(document).ready(function(){
+          $(".toggle").click(function(){
+            $("nav").toggle();
+          });
+        });
+        var hinh = [
+        'anh1.jpg',
+        'anh2.jpg',
+        'anh3.jpg',
+        ];
+        var index=0;
+        function next(){
+            index++;
+            if(index==3) index=0;
+            document.getElementById('image').src=hinh[index]
+        };
+        function prev(){
+            index--;
+            if(index<0) index=2;
+            document.getElementById('image').src=hinh[index]
+        }
+        // function prev(){
+        //     index--;
+        //     if(index<0) index=hinh.length-1;
+        //     document.getElementById('image').src=hinh[index];
+        //     document.getElementById('0').style.color='white';
+        //     document.getElementById('1').style.color='white';
+        //     document.getElementById('2').style.color='white';
+        //     document.getElementById('index').style.color='#1598d4';
+        // }
+        // function next(){
+        //     index++;
+        //     if(index==hinh.length) index=0;
+        //     document.getElementById('image').src=hinh[index];
+        //     document.getElementById('0').style.color='white';
+        //     document.getElementById('1').style.color='white';
+        //     document.getElementById('2').style.color='white';
+        //     document.getElementById('index').style.color='#1598d4';
+        // }
+        setInterval('next()',2000);
+
+        var c1=document.getElementById('c1');
+        var c2=document.getElementById('c2');
+        var c3=document.getElementById('c3');
+        const root = document.querySelector(':root');
+
+        c1.addEventListener('click',function(){
+            root.style.setProperty('--color2','#009943');
+            localStorage.setItem('pickColor','#009943');
+        })
+        c2.addEventListener('click',function(){
+            root.style.setProperty('--color2','#e2bb10');
+            localStorage.setItem('pickColor','#e2bb10');
+        })
+        c3.addEventListener('click',function(){
+            root.style.setProperty('--color2','#0fe3ea');
+            localStorage.setItem('pickColor','#0fe3ea');
+        })
+        function loadTheme(){
+            if(localStorage.getItem('pickColor') !=''){
+                root.style.setProperty('--color2',localStorage.getItem('pickColor'));
+            }
+        }
+        
+        </script>
+    
+</body>
+
+</html>
